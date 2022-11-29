@@ -1,0 +1,30 @@
+/*Seccion Presentacion*/
+
+/*Foto Perfil*/
+.rounded-circle.w-25{
+    width: 12rem !important;
+    position: absolute;
+    z-index: 1;
+    background-color: #fbfbfb;
+    height: auto;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px 3px black;
+  }
+  
+  .acerca-de-mi{
+    border-style: groove;
+    border-radius: 10px;
+    padding-top: 1%;
+    box-shadow: 0px 0px 5px 1px black; 
+    background-color: white;
+  }
+  
+  .hr-acerca {
+    height: 10px;
+    margin-left: 15%;
+    width: 70%;
+    background: linear-gradient(45deg,rgb(251, 255, 0),rgb(248, 115, 6),rgb(250, 36, 82));
+    box-shadow: 0px 0px 5px 2px black;
+    opacity: 40;
+  }

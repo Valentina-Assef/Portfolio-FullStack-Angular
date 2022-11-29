@@ -1,0 +1,10 @@
+/*Seccion Dashboard*/
+.body-dashboard{
+  background: linear-gradient(55deg,rgb(28, 119, 126),rgb(8, 59, 100),rgb(7, 47, 80));
+}
+
+.btn-panel{
+  border-style: groove;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 3px black;
+}

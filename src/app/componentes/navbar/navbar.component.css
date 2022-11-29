@@ -1,0 +1,9 @@
+/*Seccion Navbar*/
+.navbar{
+    background: linear-gradient(45deg,rgb(251, 255, 0),rgb(248, 115, 6),rgb(250, 36, 82));
+}
+
+.arg-programa{
+  filter: invert(1);
+}
+

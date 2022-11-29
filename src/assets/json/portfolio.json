@@ -1,0 +1,44 @@
+{
+    "nombre": "Valentina",
+    "apellido": "Assef",
+
+    "educacion": [
+         {
+            "titulo": "Desarrollador Full Stack Jr.",
+            "inicio": "Marzo 2022",
+            "fin": "Actualidad",
+            "institucion": "Argentina Programa"
+        },
+
+        {
+            "titulo": "Desarrollador Full Stack Jr.",
+            "inicio": "Marzo 2022",
+            "fin": "Actualidad",
+            "institucion": "Argentina Programa"
+        }
+    ],
+
+    "experiencia": [
+        {    
+            "imagen": "assets/img/Alma de Gaucho.jpg",
+            "puesto": "Colaboración Pagina web Alma de Gaucho",
+            "fecha": "Septiembre 2021 - Diciembre 2021",
+            "descripcion": "Colaboración en el diseño y desarrollo de la página."
+        },
+
+        {    
+            "imagen": "assets/img/logo-SentimientoArgentino.png",
+            "puesto": "Administrativa Contable",
+            "fecha": "Mayo 2018 - Actualidad",
+            "descripcion": "Atención telefónica, facturación, cobranzas, preparación de documentación, manejo de caja chica."
+        },
+        
+        {    
+            "imagen": "assets/img/logo-CinemaLaPlata.png",
+            "puesto": "Encargada de Sector / Vendedora",
+            "fecha": "Junio 2011 - Febrero 2018",
+            "descripcion": "Atención presencial y telefónica, manejo y preparación de documentación, manejo de caja, trato con proveedores, control de stock."
+        } 
+    ]
+    
+}

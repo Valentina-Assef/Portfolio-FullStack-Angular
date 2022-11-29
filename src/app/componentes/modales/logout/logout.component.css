@@ -1,0 +1,14 @@
+/*Ventana de Logout*/
+  .btn-cerrar{
+    background-color: rgb(26, 78, 121);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-color: #fbfbfb;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+  }
+  
+  .btn-cerrar:hover{
+    box-shadow: none;
+  }

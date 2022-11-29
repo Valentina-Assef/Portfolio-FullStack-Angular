@@ -1,0 +1,21 @@
+/*Ventana de Login*/
+.col-form-label{
+    background-color: rgb(26, 78, 121);
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .btn-login{
+    background-color: rgb(26, 78, 121);
+    color: #fff;
+    padding: 0.5rem;
+    border-color: #fbfbfb;
+    border-style: groove;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+  }
+  
+  .btn-login:hover{
+    box-shadow: none;
+  }
+  

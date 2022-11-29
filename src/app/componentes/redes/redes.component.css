@@ -1,0 +1,17 @@
+/*Redes Sociales*/
+li.list-group-item {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .fa-brands{
+    color: #0e0e0e;
+  }
+    
+  .fa-brands:hover{
+    color: #fff;
+  }
+    
+  .fa-solid:hover{
+     color: #fff;
+  }
