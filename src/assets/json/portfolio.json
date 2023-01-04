@@ -88,21 +88,24 @@
             "id": 1,
             "nombre": "Español",
             "porcentaje": 90,
-            "nivel": "Nivel: Nativo"
+            "nivel": "Nivel: Nativo",
+            "progressbar": "progress-circle progress-90"
         },
 
         {
             "id": 2,
             "nombre": "Inglés",
             "porcentaje": 60,
-            "nivel": "Nivel: Intermedio"
+            "nivel": "Nivel: Intermedio",
+            "progressbar": "progress-circle progress-60"
         },
 
         {
             "id": 3,
             "nombre": "Francés",
             "porcentaje": 10,
-            "nivel": "Nivel: Principiante"
+            "nivel": "Nivel: Principiante",
+            "progressbar": "progress-circle progress-10"
         }
     ],
 
@@ -110,19 +113,22 @@
         {
             "id": 1,
             "herramienta": "HTML",
-            "porcentaje": 70
+            "porcentaje": 70,
+            "progressbar": "progress-circle progress-70"
         },
 
         {
             "id": 2,
             "herramienta": "CSS",
-            "porcentaje": 60
+            "porcentaje": 60,
+            "progressbar": "progress-circle progress-60"
         },
 
         {
             "id": 3,
             "herramienta": "Bootstrap",
-            "porcentaje": 55
+            "porcentaje": 55,
+            "progressbar": "progress-circle progress-55"
         }
     ],
 
@@ -130,19 +136,22 @@
         {
             "id": 1,
             "herramienta": "JavaScript",
-            "porcentaje": 20
+            "porcentaje": 20,
+            "progressbar": "progress-circle progress-20"
         },
 
         {
             "id": 2,
             "herramienta": "Angular",
-            "porcentaje": 30
+            "porcentaje": 30,
+            "progressbar": "progress-circle progress-30"
         },
 
         {
             "id": 3,
             "herramienta": "Git y Github",
-            "porcentaje": 45
+            "porcentaje": 45,
+            "progressbar": "progress-circle progress-45"
         }
     ],
 
@@ -180,21 +189,24 @@
             "id": 1,
             "imagen": "assets/img/Alma de Gaucho.jpg",
             "nombre": "Alma de Gaucho",
-            "descripcion": "Empresa de venta de productos argentinos en Europa"
+            "descripcion": "Empresa de venta de productos argentinos en Europa",
+            "url":"https://instagram.com/almadegauchos?igshid=YmMyMTA2M2Y="
         },
 
         {    
             "id": 2,
             "imagen": "assets/img/FLIA.png",
             "nombre": "FLIA La Plata",
-            "descripcion": "Feria del Libro Independiente y Autogestiva"
+            "descripcion": "Feria del Libro Independiente y Autogestiva",
+            "url":"https://www.facebook.com/people/FLIA-La-Plata/100063952156377/"
         },
         
         {    
             "id": 3,
             "imagen": "assets/img/Portfolio.png",
             "nombre": "Portfolio",
-            "descripcion": "Portfolio Full Stack Developer Junior"
+            "descripcion": "Portfolio Full Stack Developer Junior",
+            "url":"#"
         }    
     ],
     

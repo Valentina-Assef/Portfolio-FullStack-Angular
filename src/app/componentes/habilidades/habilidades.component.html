@@ -8,7 +8,7 @@
         <div class="col-3 skills" *ngFor="let habilidad of habilidades">
           <h5 class="text-white text-center">{{habilidad.herramienta}}</h5>
           <div class="progress-circle-container">
-            <div class="progress-circle progress-70"><span>{{habilidad.porcentaje}}</span></div>
+            <div [ngClass]="habilidad.progressbar"><span>{{habilidad.porcentaje}}</span></div>
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="col-3 skills" *ngFor="let skill of skills">
           <h5 class="text-white text-center">{{skill.herramienta}}</h5>
           <div class="progress-circle-container">
-            <div class="progress-circle progress-55"><span>{{skill.porcentaje}}</span></div>
+            <div [ngClass]="skill.progressbar"><span>{{skill.porcentaje}}</span></div>
           </div>
         </div>
       </div>

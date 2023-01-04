@@ -9,25 +9,10 @@
        <div class="col-3 idioma" *ngFor="let idioma of idiomas">
          <h5 class="text-white text-center">{{idioma.nombre}}</h5>
          <div class="progress-circle-container mt-4">
-          <div class="progress-circle progress-90"><span>{{idioma.porcentaje}}</span></div>  
+          <div [ngClass]="idioma.progressbar"><span>{{idioma.porcentaje}}</span></div>  
          </div>
          <h6 class="text-center mt-4 text-white">{{idioma.nivel}}</h6>
        </div>
-       <!--<div class="col-3 idioma">
-         <h5 class="text-white text-center">Ingles</h5>
-         <div class="progress-circle-container mt-4">
-          <div class="progress-circle progress-60"><span>60</span></div>
-         </div>
-         <h6 class="text-center mt-4 text-white">Nivel: Intermedio</h6>
-       </div>
-      <div class="col-3 idioma">
-         <h5 class="text-white text-center">Francés</h5>
-         <div class="progress-circle-container mt-4">
-          <div class="progress-circle progress-10"><span>10</span></div>
-         </div>
-         <h6 class="text-center mt-4 text-white">Nivel: Principiante</h6>
-       </div>
-     </div>-->
      </div>
   </div>
 </section>
