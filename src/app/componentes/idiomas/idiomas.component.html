@@ -1,31 +1,33 @@
 <!--Seccion Idiomas-->
 <section class="idiomas">
-    <div class="container">
-      <h2 class="nombre-seccion">Idiomas</h2>
-      <hr class="hr-seccion">
-      <div class="row row-idiomas mt-5">
-         <div class="col-1"></div>
-         <div class="col-3 idioma">
-           <h5 class="text-white text-center">Español</h5>
-           <div class="progress-circle-container mt-4">
-            <div class="progress-circle progress-90"><span>90</span></div>  
-           </div>
-           <h6 class="text-center mt-4 text-white">Nivel: Nativo</h6>
+  <div class="container">
+    <h2 class="nombre-seccion">Idiomas</h2>
+    <hr class="hr-seccion">
+    <div class="row row-idiomas mt-5">
+       <div class="col-1"></div>
+       <!--ngFor-->
+       <div class="col-3 idioma" *ngFor="let idioma of idiomas">
+         <h5 class="text-white text-center">{{idioma.nombre}}</h5>
+         <div class="progress-circle-container mt-4">
+          <div class="progress-circle progress-90"><span>{{idioma.porcentaje}}</span></div>  
          </div>
-         <div class="col-3 idioma">
-           <h5 class="text-white text-center">Ingles</h5>
-           <div class="progress-circle-container mt-4">
-            <div class="progress-circle progress-60"><span>60</span></div>
-           </div>
-           <h6 class="text-center mt-4 text-white">Nivel: Intermedio</h6>
-         </div>
-        <div class="col-3 idioma">
-           <h5 class="text-white text-center">Francés</h5>
-           <div class="progress-circle-container mt-4">
-            <div class="progress-circle progress-5"><span>5</span></div>
-           </div>
-           <h6 class="text-center mt-4 text-white">Nivel: Principiante</h6>
-         </div>
+         <h6 class="text-center mt-4 text-white">{{idioma.nivel}}</h6>
        </div>
+       <!--<div class="col-3 idioma">
+         <h5 class="text-white text-center">Ingles</h5>
+         <div class="progress-circle-container mt-4">
+          <div class="progress-circle progress-60"><span>60</span></div>
+         </div>
+         <h6 class="text-center mt-4 text-white">Nivel: Intermedio</h6>
+       </div>
+      <div class="col-3 idioma">
+         <h5 class="text-white text-center">Francés</h5>
+         <div class="progress-circle-container mt-4">
+          <div class="progress-circle progress-10"><span>10</span></div>
+         </div>
+         <h6 class="text-center mt-4 text-white">Nivel: Principiante</h6>
+       </div>
+     </div>-->
      </div>
-    </section>
+  </div>
+</section>

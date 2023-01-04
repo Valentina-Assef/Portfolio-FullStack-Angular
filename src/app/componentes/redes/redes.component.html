@@ -1,14 +1,10 @@
 <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">
-      <a href="https://www.linkedin.com/in/valentina-assef-87a528245/" target="_blank" title="Linkedin">
-        <i class="fa-brands fa-linkedin fa-xl"></i>
+    <li class="list-group-item" *ngFor="let red of redes">
+      <a [href]="red.url" target="_blank" title="Linkedin">
+        <i [ngClass]="red.logo"></i>
       </a>
     </li>
-    <li class="list-group-item">
-      <a href="https://github.com/Valentina-Assef" target="_blank" title="Github">
-        <i class="fa-brands fa-github fa-xl"></i>
-      </a>
-    </li>
+
     <li class="list-group-item">
       <!-- Button trigger modal -->
       <i class="fa-solid fa-user-pen fa-xl" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>

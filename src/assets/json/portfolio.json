@@ -1,44 +1,270 @@
 {
+    "logo": "./assets/img/APLogo-20-20.png",
+    "banner": "./assets/img/banner.png",
     "nombre": "Valentina",
     "apellido": "Assef",
+    "titulo": "Desarrolladora Full Stack Jr.",
+    "img_perfil": "./assets/img/perfil.jpg",
+    "titulo_acerca": "Acerca de mi",
+    "acerca1": "Mi nombre es Valentina, tengo 33 años y vivo en la ciudad de",
+    "acerca2": "La Plata, Argentina.",
+    "acerca3": "Soy Desarrolladora Full Stack Jr desde el 2022.",
+    "footer": "Creado por Valentina Assef 2022",
+    "subir": "fa-solid fa-arrow-turn-up fa-2xl",
 
-    "educacion": [
-         {
-            "titulo": "Desarrollador Full Stack Jr.",
-            "inicio": "Marzo 2022",
-            "fin": "Actualidad",
-            "institucion": "Argentina Programa"
+
+    "redes": [
+        {
+            "id":1,
+            "red":"github",
+            "url":"https://github.com/Valentina-Assef",
+            "logo":"fa-brands fa-github fa-xl"        
         },
 
         {
-            "titulo": "Desarrollador Full Stack Jr.",
-            "inicio": "Marzo 2022",
-            "fin": "Actualidad",
-            "institucion": "Argentina Programa"
+            "id":2,
+            "red":"linkedin",
+            "url":"https://www.linkedin.com/in/valentina-assef-87a528245/",
+            "logo":"fa-brands fa-linkedin fa-xl"        
         }
     ],
 
-    "experiencia": [
+    "estudios": [
+        {
+            "id": 1,
+            "nombre": "Desarrollador Full Stack Jr.",
+            "inicio": "Febrero 2022",
+            "fin": "Actualidad",
+            "institucion": "Argentina Programa",
+            "localidad": ""
+        },
+
+        {
+            "id": 2,
+            "nombre": "Licenciatura en Geologia",
+            "inicio": "2007",
+            "fin": "2018",
+            "institucion": "Facultad de Cs. Naturales y Museo - UNLP",
+            "localidad": "La Plata, Buenos Aires, Argentina"
+        },
+
+        {
+            "id": 3,
+            "nombre": "Bachiller en Ciencias Naturales",
+            "inicio": "2004",
+            "fin": "2006",
+            "institucion": "Colegio Padre Respuela",
+            "localidad": "Junín, Buenos Aires, Argentina"
+        }
+    ],
+
+    "cursos": [
+        {
+            "id": 1,
+            "nombre": "Diseño Web",
+            "inicio": "2021",
+            "fin": "2022",
+            "lugar": "Falcon Masters"
+        },
+
+        {
+            "id": 2,
+            "nombre": "Introducción al Desarrollo Web: HTML y CSS",
+            "inicio": "2021",
+            "lugar": "Google Activate"
+        },
+
+        {
+            "id": 3,
+            "nombre": "Ingles",
+            "inicio": "Octubre 2020",
+            "fin": "Actualidad",
+            "lugar": "Mariana Emma"
+        }
+    ],
+
+    "idiomas": [
+        {
+            "id": 1,
+            "nombre": "Español",
+            "porcentaje": 90,
+            "nivel": "Nivel: Nativo"
+        },
+
+        {
+            "id": 2,
+            "nombre": "Inglés",
+            "porcentaje": 60,
+            "nivel": "Nivel: Intermedio"
+        },
+
+        {
+            "id": 3,
+            "nombre": "Francés",
+            "porcentaje": 10,
+            "nivel": "Nivel: Principiante"
+        }
+    ],
+
+    "habilidades": [
+        {
+            "id": 1,
+            "herramienta": "HTML",
+            "porcentaje": 70
+        },
+
+        {
+            "id": 2,
+            "herramienta": "CSS",
+            "porcentaje": 60
+        },
+
+        {
+            "id": 3,
+            "herramienta": "Bootstrap",
+            "porcentaje": 55
+        }
+    ],
+
+    "skills": [
+        {
+            "id": 1,
+            "herramienta": "JavaScript",
+            "porcentaje": 20
+        },
+
+        {
+            "id": 2,
+            "herramienta": "Angular",
+            "porcentaje": 30
+        },
+
+        {
+            "id": 3,
+            "herramienta": "Git y Github",
+            "porcentaje": 45
+        }
+    ],
+
+    "experiencias": [
         {    
+            "id": 1,
             "imagen": "assets/img/Alma de Gaucho.jpg",
             "puesto": "Colaboración Pagina web Alma de Gaucho",
-            "fecha": "Septiembre 2021 - Diciembre 2021",
+            "inicio": "Septiembre 2021",
+            "fin": "Diciembre 2021",
             "descripcion": "Colaboración en el diseño y desarrollo de la página."
         },
 
         {    
+            "id": 2,
             "imagen": "assets/img/logo-SentimientoArgentino.png",
             "puesto": "Administrativa Contable",
-            "fecha": "Mayo 2018 - Actualidad",
+            "inicio": "Mayo 2018",
+            "fin": "Actualidad",
             "descripcion": "Atención telefónica, facturación, cobranzas, preparación de documentación, manejo de caja chica."
         },
         
         {    
+            "id": 3,
             "imagen": "assets/img/logo-CinemaLaPlata.png",
             "puesto": "Encargada de Sector / Vendedora",
-            "fecha": "Junio 2011 - Febrero 2018",
+            "inicio": "Junio 2011",
+            "fin": "Febrero 2018",
             "descripcion": "Atención presencial y telefónica, manejo y preparación de documentación, manejo de caja, trato con proveedores, control de stock."
-        } 
-    ]
+        }    
+    ],
+
+    "proyectos": [
+        {    
+            "id": 1,
+            "imagen": "assets/img/Alma de Gaucho.jpg",
+            "nombre": "Alma de Gaucho",
+            "descripcion": "Empresa de venta de productos argentinos en Europa"
+        },
+
+        {    
+            "id": 2,
+            "imagen": "assets/img/FLIA.png",
+            "nombre": "FLIA La Plata",
+            "descripcion": "Feria del Libro Independiente y Autogestiva"
+        },
+        
+        {    
+            "id": 3,
+            "imagen": "assets/img/Portfolio.png",
+            "nombre": "Portfolio",
+            "descripcion": "Portfolio Full Stack Developer Junior"
+        }    
+    ],
     
+    "botones1": [
+        {
+            "id":1,
+            "seccion":"Redes Sociales",
+            "icono1":"fa-brands fa-square-twitter fa-xl",
+            "icono2":"fa-solid fa-pencil"        
+        },
+
+        {
+            "id":2,
+            "seccion":"Banner",
+            "icono1":"fa-regular fa-image fa-xl",
+            "icono2":"fa-solid fa-pencil"         
+        },
+
+        {
+            "id":3,
+            "seccion":"Presentación",
+            "icono1":"fa-solid fa-user fa-xl",
+            "icono2":"fa-solid fa-pencil"         
+        }
+    ],
+
+    "botones2": [
+        {
+            "id":1,
+            "seccion":"Educación",
+            "icono1":"fa-solid fa-graduation-cap fa-xl",
+            "icono2":"fa-solid fa-pencil"         
+        },
+
+        {
+            "id":2,
+            "seccion":"Cursos",
+            "icono1":"fa-solid fa-award fa-xl",
+            "icono2":"fa-solid fa-pencil"        
+        },
+
+        {
+            "id":3,
+            "seccion":"Idiomas",
+            "icono1":"fa-solid fa-language fa-xl",
+            "icono2":"fa-solid fa-pencil"         
+        }
+    ],
+
+    "botones3": [
+
+        {
+            "id":1,
+            "seccion":"Skills",
+            "icono1":"fa-solid fa-dumbbell fa-xl",
+            "icono2":"fa-solid fa-pencil"         
+        },
+
+        {
+            "id":2,
+            "seccion":"Experiencia Laboral",
+            "icono1":"fa-solid fa-briefcase fa-xl",
+            "icono2":"fa-solid fa-pencil"        
+        },
+
+        {
+            "id":3,
+            "seccion":"Proyectos",
+            "icono1":"fa-regular fa-folder-open fa-xl",
+            "icono2":"fa-solid fa-pencil"        
+        }
+    ]
 }

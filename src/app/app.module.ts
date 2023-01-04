@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +32,8 @@ import { SkillsdashboardComponent } from './componentes/modales/skillsdashboard/
 import { ExperienciadashboardComponent } from './componentes/modales/experienciadashboard/experienciadashboard.component';
 import { ProyectosdashboardComponent } from './componentes/modales/proyectosdashboard/proyectosdashboard.component';
 
+import { ErrorComponent } from './componentes/error/error.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,12 +63,19 @@ import { ProyectosdashboardComponent } from './componentes/modales/proyectosdash
     SkillsdashboardComponent,
     ExperienciadashboardComponent,
     ProyectosdashboardComponent,
+    ErrorComponent,
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

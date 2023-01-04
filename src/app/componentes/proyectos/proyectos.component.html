@@ -4,33 +4,13 @@
       <h2 class="nombre-seccion">Proyectos</h2>
       <hr class="hr-seccion">
       <div class="row mt-5 text-center">
-        <div class="col">
+        <div class="col" *ngFor="let proyecto of proyectos">
           <div class="card card-proyectos mt-4">
-            <img src="assets/img/Alma de Gaucho.jpg" class="card-img-top" alt="..." height="150px">
+            <img [src]="proyecto.imagen" class="card-img-top" alt="..." height="150px">
           <div class="card-body">
-            <h5 class="card-title">Alma de Gaucho</h5>
-            <p class="card-text">Empresa de venta de productos argentinos en Europa</p>
+            <h5 class="card-title">{{proyecto.nombre}}</h5>
+            <p class="card-text">{{proyecto.descripcion}}</p>
             <a href="https://instagram.com/almadegauchos?igshid=YmMyMTA2M2Y=" target="_blank" class="btn btn-visita">Visita la página</a>
-          </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card-proyectos mt-4">
-            <img src="assets/img/FLIA.png" class="card-img-top" alt="..." height="150px">
-            <div class="card-body">
-              <h5 class="card-title">FLIA La Plata</h5>
-              <p class="card-text">Feria del Libro Independiente y Autogestiva</p>
-              <a href="https://www.facebook.com/people/FLIA-La-Plata/100063952156377/" target="_blank" class="btn btn-visita">Visita la página</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card-proyectos mt-4">
-            <img src="assets/img/Portfolio.png" class="card-img-top" alt="..." height="150px">
-          <div class="card-body">
-            <h5 class="card-title">Portfolio</h5>
-            <p class="card-text">Portfolio Full Stack Developer Junior</p>
-            <a href="#" target="_blank" class="btn btn-visita">Visita la página</a>
           </div>
           </div>
         </div>

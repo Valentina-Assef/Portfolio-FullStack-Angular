@@ -3,36 +3,14 @@
     <div class="container">
       <h2 class="nombre-seccion">Experiencia Laboral</h2>
       <hr class="hr-seccion">
-      <div class="row mt-5">
-        <div class="col-sm-2">
-          <img src="assets/img/Alma de Gaucho.jpg" class="card-img-top" alt="...">
+      <div class="row mt-5" *ngFor="let experiencia of experiencias">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <img [src]="experiencia.imagen" class="card-img-top" alt="...">
         </div>
         <div class="col-sm-6">
-          <h5>Colaboración Pagina web "Alma de Gaucho"</h5>
-          <h6>Septiembre 2021 - Diciembre 2021</h6>
-          <p>Colaboración en el diseño y desarrollo de la página.</p>
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-sm-2">
-          <img src="assets/img/logo-SentimientoArgentino.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col-sm-6">
-          <h5>Administrativa Contable</h5>
-          <h6>Mayo 2018 - Actualidad</h6>
-          <p>Atención telefónica, facturación, cobranzas, preparación de documentación, manejo de caja chica.</p>
-        </div>
-      <div class="col-sm-4"></div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-sm-2">
-          <img src="assets/img/logo-CinemaLaPlata.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col-sm-6">
-          <h5>Encargada de Sector / Vendedora</h5>
-          <h6>Junio 2011 - Febrero 2018</h6>
-          <p>Atención presencial y telefónica, manejo y preparación de documentación, manejo de caja, trato con proveedores, control de stock.</p>
+          <h5>{{experiencia.puesto}}</h5>
+          <h6>{{experiencia.inicio}} - {{experiencia.fin}}</h6>
+          <p>{{experiencia.descripcion}}</p>
         </div>
         <div class="col-sm-4"></div>
       </div>

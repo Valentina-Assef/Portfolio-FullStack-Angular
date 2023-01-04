@@ -6,24 +6,37 @@
           <h5 class="modal-title" id="exampleModalLabel">Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <!--Aca pongo el formulario de login-->
+        <!--Aca pongo el formulario de login-->
+        <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="modal-body"> 
           <div class="mb-3 row">
-            <label for="staticEmail" class="col-sm-3 col-form-label text-center">Usuario</label>
+            <label for="staticEmail" class="col-sm-3 col-form-label text-center">Email</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="staticEmail">
+              <!--Agregue el formControlName y la clase "Invalid"-->
+              <input type="email" class="form-control" id="staticEmail" formControlName="email" [class.border-danger]="MailInvalid">
+            </div>
+            <!-- Getter que configuramos en el controlador -->
+            <div *ngIf="Mail?.errors  && Mail?.touched">    
+              <p *ngIf="Mail?.hasError('required')" class="error">El email es requerido.</p>
+              <p *ngIf="Mail?.hasError('email')" class="error">El formato del email debe ser válido.</p>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-3 col-form-label text-center">Contraseña</label>
             <div class="col-sm-9">
-              <input type="password" class="form-control" id="inputPassword">
+              <input type="password" class="form-control" id="inputPassword" formControlName="password" [class.border-danger]="MailInvalid">
+            </div>
+            <!-- Getter que configuramos en el controlador -->
+            <div *ngIf="Password?.errors  && Password?.touched">
+              <p *ngIf="Password?.hasError('required')" class="error">El password es requerido.</p>
+              <!-- <p *ngIf="Password?.errors?.minlength" class="error">El password debe ser de 8 o más caracteres.</p> -->
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn-login" data-bs-dismiss="modal"><a routerLink="/dashboard">Iniciar sesion</a></button>
+          <button type="button" class="btn-login" data-bs-dismiss="modal"><a>Iniciar sesion</a></button>
         </div>
+        </form>
       </div>
     </div>
   </div> 

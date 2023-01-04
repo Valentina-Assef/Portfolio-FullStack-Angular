@@ -3,33 +3,13 @@
     <div class="container">
       <h2 class="nombre-seccion">Cursos</h2>
       <hr class="hr-seccion">
-      <div class="row mt-4">
-        <div class="col-sm-2">
-          <h6 class="text-white text-center">Diseño Web</h6>
+      <div class="row mt-4" *ngFor="let curso of cursos">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <h6 class="text-white text-center">{{curso.nombre}}</h6>
         </div>
         <div class="col-sm-6">
-          <h5>2021 - 2022</h5>
-          <h6>Falcon Masters</h6>
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-sm-2">
-          <h6 class="text-white text-center">Introducción al Desarrollo Web: HTML y CSS</h6>
-        </div>
-        <div class="col-sm-6">
-          <h5>2021</h5>
-          <h6>Google Activate</h6>
-        </div>
-        <div class="col-sm-4"></div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-sm-2">
-          <h6 class="text-white text-center">Ingles</h6>
-        </div>
-        <div class="col-sm-6">
-          <h5>Octubre 2020 - Actualidad</h5>
-          <h6>Mariana Emma</h6>
+          <h5>{{curso.inicio}} - {{curso.fin}}</h5>
+          <h6>{{curso.lugar}}</h6>
         </div>
         <div class="col-sm-4"></div>
       </div>

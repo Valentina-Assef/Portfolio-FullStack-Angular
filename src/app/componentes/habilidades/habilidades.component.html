@@ -1,47 +1,23 @@
 <!--Seccion Habilidades de Desarrollo-->
 <section class="skills">
     <div class="container container-skills">
-      <h2 class="nombre-seccion">Habilidades de Desarrollo</h2>
+      <h2 class="nombre-seccion">Herramientas de Desarrollo</h2>
       <hr class="hr-seccion">
-      <div class="row row-skills text-center mt-5">
+      <div class="row row-skills text-center">
         <div class="col-1"></div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">HTML</h5>
+        <div class="col-3 skills" *ngFor="let habilidad of habilidades">
+          <h5 class="text-white text-center">{{habilidad.herramienta}}</h5>
           <div class="progress-circle-container">
-            <div class="progress-circle progress-70"><span>70</span></div>
-          </div>
-        </div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">CSS</h5>
-          <div class="progress-circle-container">
-            <div class="progress-circle progress-60"><span>60</span></div>
-          </div>
-        </div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">JavaScript</h5>
-          <div class="progress-circle-container">
-            <div class="progress-circle progress-5"><span>5</span></div>
+            <div class="progress-circle progress-70"><span>{{habilidad.porcentaje}}</span></div>
           </div>
         </div>
       </div>
-      <div class="row row-idiomas text-center mt-5">
+      <div class="row row-idiomas text-center">
         <div class="col-1"></div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">Bootstrap</h5>
+        <div class="col-3 skills" *ngFor="let skill of skills">
+          <h5 class="text-white text-center">{{skill.herramienta}}</h5>
           <div class="progress-circle-container">
-            <div class="progress-circle progress-55"><span>55</span></div>
-          </div>
-        </div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">Angular</h5>
-          <div class="progress-circle-container">
-            <div class="progress-circle progress-1"><span>1</span></div> 
-          </div>
-        </div>
-        <div class="col-3 skills">
-          <h5 class="text-white text-center">Git y Github</h5>
-          <div class="progress-circle-container">
-            <div class="progress-circle progress-45"><span>45</span></div>
+            <div class="progress-circle progress-55"><span>{{skill.porcentaje}}</span></div>
           </div>
         </div>
       </div>

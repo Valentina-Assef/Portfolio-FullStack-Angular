@@ -18,4 +18,12 @@
   .btn-login:hover{
     box-shadow: none;
   }
+
+  .error{
+    color:red
+  }
+  
+  .border-danger{
+    border-color: red;
+  }
   
