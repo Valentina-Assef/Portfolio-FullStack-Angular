@@ -1,4 +1,16 @@
-# Proyectoangular
+# Proyecto Angular
+
+## Maqueta Dinamica
+
+DIA 1: Creación de Componentes.
+
+DIA 2: Creación del archivo Json.
+
+DIA 3: Creación de un Servicio funcional. Uso de DataBinding y Directivas.
+
+DIA 4: Formularios Reactivos. Modificacion README.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 

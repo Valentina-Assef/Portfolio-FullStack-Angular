@@ -63,7 +63,7 @@
             "id": 1,
             "nombre": "Diseño Web",
             "inicio": "2021",
-            "fin": "2022",
+            "fin": "- 2022",
             "lugar": "Falcon Masters"
         },
 
@@ -78,7 +78,7 @@
             "id": 3,
             "nombre": "Ingles",
             "inicio": "Octubre 2020",
-            "fin": "Actualidad",
+            "fin": "- Actualidad",
             "lugar": "Mariana Emma"
         }
     ],
@@ -215,7 +215,9 @@
             "id":1,
             "seccion":"Redes Sociales",
             "icono1":"fa-brands fa-square-twitter fa-xl",
-            "icono2":"fa-solid fa-pencil"        
+            "icono2":"fa-solid fa-pencil",
+            "campo1":"Icono",
+            "campo2":"Link"
         },
 
         {

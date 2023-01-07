@@ -12,10 +12,10 @@ export class LoginComponent implements OnInit {
 
   // Inyectar en el constructor el formBuilder
   constructor(private formBuilder: FormBuilder){ 
-    ///Creamos el grupo de controles para el formulario de login
+    ///Creamos el grupo de controles para el formulario
     this.form= this.formBuilder.group({
       email:['', [Validators.required, Validators.email]],
-      password:['',[Validators.required, Validators.minLength(8)]],
+      password:['', [Validators.required, Validators.minLength(6)]],
     })
   }
 
@@ -23,6 +23,10 @@ export class LoginComponent implements OnInit {
 //Metodos (toma datos para usarlos)
   get Mail(){
    return this.form.get("email");
+  }
+
+  get MailInvalid(){
+    return this.Mail?.touched && !this.Mail?.valid;
   }
 
   get Password(){
@@ -33,13 +37,9 @@ export class LoginComponent implements OnInit {
     return this.Password?.touched && !this.Password?.valid;
   }
 
-  get MailInvalid() {
-    return this.Mail?.touched && !this.Mail?.valid;
-  }
-
   //Funcion
   onEnviar(event: Event){
-    // Detenemos la propagación o ejecución del compotamiento submit de un form
+    // Detenemos la propagación o ejecución del comportamiento submit de un form
     event.preventDefault; 
  
     if (this.form.valid){

@@ -1,12 +1,29 @@
 <!--Seccion Formulario de contacto-->
 <section class="formulario mt-5">
-    <form action="">
+    <form action="" [formGroup]="form" (ngSubmit)="onEnviar($event)">
       <h2 class="titulo-formulario">Contacto</h2>
-      <div class="form-group"><!--Capaz no es necesario-->
-        <input type="text" name="nombre" placeholder="Nombre" class="imput-formulario">
-        <input type="email" name="email" placeholder="Email" class="imput-formulario">
-        <input type="text" name="Asunto" placeholder="Asunto" class="imput-formulario">
-        <textarea name="mensaje" placeholder="Escriba aqui su mensaje" class="textarea-formulario"></textarea>
+      <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombre" class="imput-formulario" formControlName="nombre">
+        <!-- Getter que configuramos en el controlador -->
+        <div *ngIf="Name?.errors && Name?.touched">    
+          <p *ngIf="Name?.hasError('required')" class="error text-white">Nombre requerido.</p>
+        </div>
+        <input type="email" name="email" placeholder="Email" class="imput-formulario" formControlName="email">
+        <!-- Getter que configuramos en el controlador -->
+        <div *ngIf="Mail?.errors && Mail?.touched">    
+          <p *ngIf="Mail?.hasError('required')" class="error text-white">Email requerido.</p>
+          <p *ngIf="Mail?.hasError('email')" class="error text-white">El formato del email debe ser válido.</p>
+        </div>
+        <input type="text" name="asunto" placeholder="Asunto" class="imput-formulario" formControlName="asunto">
+         <!-- Getter que configuramos en el controlador -->
+         <div *ngIf="Subject?.errors && Subject?.touched">    
+          <p *ngIf="Subject?.hasError('required')" class="error text-white">Asunto requerido.</p>
+        </div>
+        <textarea name="mensaje" placeholder="Escriba aqui su mensaje" class="textarea-formulario" formControlName="mensaje"></textarea>
+         <!-- Getter que configuramos en el controlador -->
+         <div *ngIf="Message?.errors && Message?.touched">    
+          <p *ngIf="Message?.hasError('required')" class="error text-white">Mensaje requerido.</p>
+        </div>
         <button type="submit" class="btn btn-enviar">Enviar</button>
       </div>
     </form>
