@@ -216,22 +216,23 @@
             "seccion":"Redes Sociales",
             "icono1":"fa-brands fa-square-twitter fa-xl",
             "icono2":"fa-solid fa-pencil",
-            "campo1":"Icono",
-            "campo2":"Link"
+            "target":"#redesModal"
         },
 
         {
             "id":2,
             "seccion":"Banner",
             "icono1":"fa-regular fa-image fa-xl",
-            "icono2":"fa-solid fa-pencil"         
+            "icono2":"fa-solid fa-pencil",
+            "target":"#bannerModal"     
         },
 
         {
             "id":3,
             "seccion":"Presentación",
             "icono1":"fa-solid fa-user fa-xl",
-            "icono2":"fa-solid fa-pencil"         
+            "icono2":"fa-solid fa-pencil",
+            "target":"#presentacionModal"        
         }
     ],
 
@@ -240,21 +241,24 @@
             "id":1,
             "seccion":"Educación",
             "icono1":"fa-solid fa-graduation-cap fa-xl",
-            "icono2":"fa-solid fa-pencil"         
+            "icono2":"fa-solid fa-pencil",
+            "target":"#eduModal"       
         },
 
         {
             "id":2,
             "seccion":"Cursos",
             "icono1":"fa-solid fa-award fa-xl",
-            "icono2":"fa-solid fa-pencil"        
+            "icono2":"fa-solid fa-pencil",
+            "target":"#cursosModal"      
         },
 
         {
             "id":3,
             "seccion":"Idiomas",
             "icono1":"fa-solid fa-language fa-xl",
-            "icono2":"fa-solid fa-pencil"         
+            "icono2":"fa-solid fa-pencil",
+            "target":"#idiomasModal"        
         }
     ],
 
@@ -264,21 +268,24 @@
             "id":1,
             "seccion":"Skills",
             "icono1":"fa-solid fa-dumbbell fa-xl",
-            "icono2":"fa-solid fa-pencil"         
+            "icono2":"fa-solid fa-pencil",
+            "target":"#skillModal"    
         },
 
         {
             "id":2,
             "seccion":"Experiencia Laboral",
             "icono1":"fa-solid fa-briefcase fa-xl",
-            "icono2":"fa-solid fa-pencil"        
+            "icono2":"fa-solid fa-pencil",
+            "target":"#laboralModal"        
         },
 
         {
             "id":3,
             "seccion":"Proyectos",
             "icono1":"fa-regular fa-folder-open fa-xl",
-            "icono2":"fa-solid fa-pencil"        
+            "icono2":"fa-solid fa-pencil",
+            "target":"#proyectosModal"   
         }
     ]
 }

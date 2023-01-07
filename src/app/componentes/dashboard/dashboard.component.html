@@ -6,7 +6,7 @@
       <div class="row mt-4 text-center">
         <div class="col" *ngFor="let boton1 of botones1">
           <div class="card">
-            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" data-bs-target="#redesModal">
+            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" [attr.data-bs-target]="boton1.target">
               <h3>{{boton1.seccion}}</h3>
               <i [ngClass]="boton1.icono1"></i> <i [ngClass]="boton1.icono2"></i>
             </button>
@@ -18,7 +18,7 @@
       <div class="row mt-4 text-center">
         <div class="col" *ngFor="let boton2 of botones2">
           <div class="card">
-            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" data-bs-target="#eduModal">
+            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" [attr.data-bs-target]="boton2.target">
               <h3>{{boton2.seccion}}</h3>
               <i [ngClass]="boton2.icono1"></i> <i [ngClass]="boton2.icono2"></i>
             </button>
@@ -30,7 +30,7 @@
       <div class="row mt-4 text-center">
         <div class="col" *ngFor="let boton3 of botones3">
           <div class="card">
-            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" data-bs-target="#skillModal">
+            <button type="button" class="btn btn-lg p-5 btn-panel" data-bs-toggle="modal" [attr.data-bs-target]="boton3.target">
               <h3>{{boton3.seccion}}</h3>
               <i [ngClass]="boton3.icono1"></i> <i [ngClass]="boton3.icono2"></i>
             </button>
