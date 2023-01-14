@@ -10,6 +10,8 @@ DIA 3: Creación de un Servicio funcional. Uso de DataBinding y Directivas.
 
 DIA 4: Formularios Reactivos. Modificacion README.
 
+DIA 5: Formularios Reactivos del Dashboard. Creacion de un Tag. Modificacion README.
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
