@@ -6,37 +6,55 @@
         <h5 class="modal-title" id="exampleModalLabel">Educación</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <!--Formulario de edicion-->
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Titulo</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Periodo</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Institución</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Localidad</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-save">Guardar</button>
-        <button type="button" class="btn-delete">Eliminar</button>
-      </div>
+      <!--Formulario de edicion-->
+      <form [formGroup]="formEducacion" (ngSubmit)="onEnviar($event)">
+       <div class="modal-body">
+         <div class="mb-3 row">
+           <label for="formFileSn" class="form-label">Título</label>
+           <div class="col-sm-9">
+             <input class="form-control form-control-sm" id="formFileSn" type="text" formControlName="titulo" [class.border-danger]="TituloInvalid">
+           </div>
+           <!-- Getter que configuramos en el controlador -->
+           <div *ngIf="Titulo?.errors && Titulo?.touched">    
+             <p *ngIf="Titulo?.hasError('required')" class="error">*Título requerido</p>
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <label for="formFileSn" class="form-label">Periodo</label>
+           <div class="col-sm-9">
+             <input class="form-control form-control-sm" id="formFileSn" type="text" formControlName="periodo" [class.border-danger]="PeriodoInvalid">
+           </div>
+           <!-- Getter que configuramos en el controlador -->
+           <div *ngIf="Periodo?.errors && Periodo?.touched">    
+             <p *ngIf="Periodo?.hasError('required')" class="error">*Periodo requerido</p>
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <label for="formFileSn" class="form-label">Institución</label>
+           <div class="col-sm-9">
+             <input class="form-control form-control-sm" id="formFileSn" type="text" formControlName="institucion" [class.border-danger]="InstitucionInvalid">
+           </div>
+           <!-- Getter que configuramos en el controlador -->
+           <div *ngIf="Institucion?.errors && Institucion?.touched">    
+             <p *ngIf="Institucion?.hasError('required')" class="error">*Institución requerida</p>
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <label for="formFileSn" class="form-label">Localidad</label>
+           <div class="col-sm-9">
+             <input class="form-control form-control-sm" id="formFileSn" type="text" formControlName="localidad" [class.border-danger]="LocalidadInvalid">
+           </div>
+           <!-- Getter que configuramos en el controlador -->
+           <div *ngIf="Localidad?.errors && Localidad?.touched">    
+             <p *ngIf="Localidad?.hasError('required')" class="error">*Localidad requerida</p>
+           </div>
+         </div>
+       </div>
+       <div class="modal-footer">
+         <button type="submit" class="btn-save">Guardar</button>
+         <button type="submit" class="btn-delete">Eliminar</button>
+       </div>
+      </form>
     </div>
   </div>
 </div>

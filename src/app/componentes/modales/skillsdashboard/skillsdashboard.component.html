@@ -6,25 +6,37 @@
         <h5 class="modal-title" id="exampleModalLabel">Skills</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <!--Formulario de edicion-->
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Habilidad</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
+      <!--Formulario de edicion-->
+      <form [formGroup]="formSkills" (ngSubmit)="onEnviar($event)">
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="formFileSn" class="form-label">Habilidad</label>
+            <div class="col-sm-9">
+              <input class="form-control form-control-sm" id="formFileSn" type="text" formControlName="skill" [class.border-danger]="SkillInvalid">
+            </div>
+            <!-- Getter que configuramos en el controlador -->
+            <div *ngIf="Skill?.errors && Skill?.touched">    
+              <p *ngIf="Skill?.hasError('required')" class="error">*Habilidad requerida</p>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="formFileSn" class="form-label">Porcentaje</label>
+            <div class="col-sm-9">
+              <input class="form-control form-control-sm" id="formFileSn" type="number" formControlName="porcentaje" [class.border-danger]="PorcentajeInvalid">
+            </div>
+            <!-- Getter que configuramos en el controlador -->
+            <div *ngIf="Porcentaje?.errors && Porcentaje?.touched">    
+              <p *ngIf="Porcentaje?.hasError('required')" class="error">*Porcentaje requerido</p>
+              <p *ngIf="Porcentaje?.errors?.['max']" class="error">*El porcentaje no debe ser superior a 100</p>
+              <p *ngIf="Porcentaje?.errors?.['min']" class="error">*El porcentaje no puede ser negativo</p>
+            </div>
           </div>
         </div>
-        <div class="mb-3 row">
-          <label for="formFileSn" class="form-label">Porcentaje</label>
-          <div class="col-sm-9">
-            <input class="form-control form-control-sm" id="formFileSn" type="text">
-          </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn-save">Guardar</button>
+          <button type="submit" class="btn-delete">Eliminar</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-save">Guardar</button>
-        <button type="button" class="btn-delete">Eliminar</button>
-      </div>
+      </form>
     </div>
   </div>
 </div>
